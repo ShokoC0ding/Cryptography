@@ -34,8 +34,11 @@ public class S_DES {
 
 
     /**
-    *   构造方法
-    *   参数mode为"en", 需要加密; mode为"de", 需要解密
+    *   构造方法，有三个参数
+        参数key_input，接收输入的密钥
+        参数t_input，接收输入的明文（或密文）
+    *   参数mode，为"en"时，需要加密，t_input此时为明文，由密钥和明文得密文
+                 为"de"时, 需要解密，t_input此时为密文，由密钥和密文得明文
     * */
     public S_DES(String key_input,String t_input,String mode) {
         char[] key_temp = key_input.toCharArray();
