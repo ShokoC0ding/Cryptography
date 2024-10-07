@@ -5,7 +5,7 @@ public class crack {
     private static String cypherText;  //密文
     public String key;  //密钥
 
-    /**    构造方法     */
+    /**    构造方法 接收输入的明文和密文    */
     public crack(String plainText, String cypherText){
         this.plainText=plainText;
         this.cypherText=cypherText;
@@ -32,7 +32,10 @@ public class crack {
     }
 
 
-    /**   密钥正确性测试  */
+    /**   密钥正确性测试  
+          测试方法为 通过S_DES和S_DES_Enhanced中的方法，由密钥和明文直接生成密文，
+          检查密文是否与预期一致
+    */
     public void try_key(String key){
         int flag=0;  /**    标志位, 确定密文对是数字0、1串还是ASCII字符串*/
 
