@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 4
+					"vgap": 30
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/eye2.jpg" )
+						"horizontalAlignment": 0
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 2
+					} ) {
+						name: "panel1"
+						"preferredSize": new java.awt.Dimension( 126, 80 )
+						"minimumSize": new java.awt.Dimension( 126, 80 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "请输入密钥"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "key_field"
+							"maximumSize": new java.awt.Dimension( 2147483647, 15 )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 2
+					} ) {
+						name: "panel2"
+						"preferredSize": new java.awt.Dimension( 126, 15 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "请输入数据"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "plainText_field"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 2
+					} ) {
+						name: "panel3"
+						"preferredSize": new java.awt.Dimension( 98, 15 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "生成密文"
+						} )
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "cypherText_field"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0"
+					"$rowSpecs": "0:1.0, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+					"$vGap": 1
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "click_ok", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"hAlign": 4
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
