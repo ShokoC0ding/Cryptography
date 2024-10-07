@@ -7,7 +7,7 @@ package lib;
 public class S_DES_Enhanced {
     private String key; //密钥
     private String t_input; //明文或密文
-    private String mode; //确定加密还是解密
+    private String mode; // 用以确定加密还是解密
     private static S_DES s_des;
     public static int[] ascllArr_plain; //明文字符的ASCII码形式
     public static int[] ascllArr_cypher; //密文字符的ASCII码形式
@@ -19,7 +19,6 @@ public class S_DES_Enhanced {
         this.key=key;
         this.t_input=t_input;
         this.mode=mode;
-
         /**
          *      将明文或密文字符串逐个字符转换成ASCII码，存入int数组
          */
