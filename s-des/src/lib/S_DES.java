@@ -105,7 +105,7 @@ public class S_DES {
             for (int k = 0; k < 4; k++) { // 使用k代替内层循环的i以避免冲突
                 lk[k] = lk[k + 1];
             }
-            lk[4] = temp1; // 注意：这里应该是lk[4]而不是lk[lk.length-1]，因为原数组长度可能超过5
+            lk[4] = temp1; 
             // 对rk进行相同的操作
             temp1 = rk[0];
             for (int k = 0; k < 4; k++) {
