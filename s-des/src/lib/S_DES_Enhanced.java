@@ -13,7 +13,7 @@ public class S_DES_Enhanced {
     public static int[] ascllArr_cypher; //密文字符的ASCII码形式
 
     /**
-     *    构造方法
+     *    构造方法，参数含义同S_DES.java的S_DES
      */
     public S_DES_Enhanced(String key, String t_input,String mode){
         this.key=key;
